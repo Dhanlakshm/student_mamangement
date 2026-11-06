@@ -1,0 +1,10 @@
+name: test1
+on: [push]
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      python-version: "3.12"
+      - runs: pip install pytest
+      - runs: pytest
